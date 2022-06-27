@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto:wght@500&family=Titan+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Texto en Movimiento</title>
+</head>
+<body>
+    <h1 id="textoPrincipal" class="centrar-texto">Hello World!</h1>
+    <form action="" id="formulario">
+        <h2 class="centrar-texto">Modificaciones al texto</h2>
+        <select name="" id="tipografia" class="section">
+            <option value="0" disabled selected>Escoja tipo de letra</option>
+            <option value="Montserrat">Montserrat</option>
+            <option value="Roboto">Roboto</option>
+            <option value="Titan One">Titan One</option>
+        </select>
+        <!-- <button id="btn1">Patron dos</button> -->
+        <select name="" id="tipoPatron" class="section">
+            <option value="0" disabled selected>Escoja Patron</option>
+            <option value="img/patron.jpg">Patron Uno</option>
+            <option value="img/patrondos.jpg">Patron Dos</option>
+            <option value="img/patrontres.jpg">Patron Tres</option>
+            <option value="img/patroncuatro.jpg">Patron Cuatro</option>
+            <option value="img/patroncinco.jpg">Patron Cinco</option>
+        </select>
+        <div class="cambioTexto section">
+            <label for="tamanioLetra">Escoja Tamaño de Letra</label>
+            <input type="range" id="tamanioLetra" min="1"  max="20">
+        </div>
+    </form>
+    <script src="main.js"></script>
+</body>
+</html>
