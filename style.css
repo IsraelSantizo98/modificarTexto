@@ -36,6 +36,7 @@ h1{
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    /* -webkit-text-stroke: 1px #fff; */
     animation: text 15s linear infinite;
 }
 @keyframes text {
