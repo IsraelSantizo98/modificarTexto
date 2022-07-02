@@ -4,6 +4,7 @@ const texto = document.getElementById('textoPrincipal');
 const tipoPatron = document.getElementById('tipoPatron');
 const range = document.getElementById('tamanioLetra');
 const stroke = document.getElementById('stroke');
+const colorPicker = document.getElementById('colorPicker');
 //Campura el texto de un select option para modificar la tipografia
 tipoLetra.addEventListener('change', function(){
     //let selectOption = this.options[tipoLetra.selectedIndex];
@@ -23,15 +24,16 @@ range.addEventListener('change', function(){
     texto.style.fontSize = `${range.value}rem`;
     //console.log(range.value);
 });
-
+//Captura un input de tipo check para identificar si esta o no marcado para agregar un estilo css
 stroke.addEventListener('click', function(){
     console.log(stroke.checked);
     if(stroke.checked){
-        console.log('activado');
-        texto.style.webkitTextStroke = '1px solid #fff';
+        //console.log('activado');
+        texto.style.webkitTextStroke = '1px #fff';
         //texto.style.color = 'red';
     }else{
-        console.log('desactivado');
+        //console.log('desactivado');
+        //texto.style.color = 'transparent';
         texto.style.webkitTextStroke = 'transparent';
     }
     /*if(stroke.value === ''){
@@ -42,4 +44,9 @@ stroke.addEventListener('click', function(){
     texto.style.textStroke = "1px #fff";
     console.log('stroke');
     */
+});
+//Captura de input de tipo color para cambiar el color de fondo del body
+colorPicker.addEventListener('change', function(){
+    console.log(colorPicker.value);
+    document.body.style.backgroundColor = colorPicker.value;
 });
