@@ -16,6 +16,11 @@
     </div>
     <div class="contenedor-formulario">
         <form action="" id="formulario">
+            <h2 class="centrar-texto">Modificaciones al fondo</h2>
+            <div class="contenedor-label">
+                <label  for="colorPicker">Escoja un color</label>
+                <input type="color" name="color" id="colorPicker" value="#0c1218">
+            </div>
             <h2 class="centrar-texto">Modificaciones al texto</h2>
             <select name="" id="tipografia" class="section">
                 <option value="0" disabled selected>Escoja tipo de letra</option>
@@ -36,7 +41,10 @@
                 <label for="tamanioLetra">Escoja Tamaño de Letra</label>
                 <input type="range" id="tamanioLetra" min="1"  max="20">
             </div>
-            <input type="checkbox" name="" id="stroke">
+            <div class="contenedor-label">
+                <label class="d-flex-end" for="stroke">Agregar estilo Stroke al texto</label>
+                <input type="checkbox" name="" id="stroke">
+            </div> 
         </form>
     </div>
     <script src="main.js"></script>
