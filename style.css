@@ -11,7 +11,7 @@ html{
     box-sizing: inherit;
 }
 body{
-    /* background-color: var(--colorFondo); */
+    background-color: var(--colorFondo);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -26,6 +26,10 @@ body{
 }
 .section{
     margin: 1rem 0;
+}
+d-flex-end{
+    align-items: center;
+    justify-content: flex-end;
 }
 h1{
     font-size: var(--tamanioTexto);
@@ -61,4 +65,11 @@ h2{
     flex-direction: column;
     color: #fff;
     font-size: 1.6rem;
+}
+.contenedor-label{
+    color: #fff;
+    font-size: 1.8rem;
+    text-align: left;
+    width: 100%;
+    margin-bottom: .8rem;
 }
